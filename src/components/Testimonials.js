@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React  from "react";
 import { TESTIMONIALS } from "../constants";
 
-const Testimonials = () => {
-  const [open, setOpen] = useState(false);
+const Testimonials = () => { 
 
   return (
     <div className="my-12 px-8">
@@ -12,7 +11,7 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         {TESTIMONIALS?.map((item) => (
           <div
-            className="[perspective:1000px] group h-[277px] w-[277px]"
+            className="[perspective:1000px] group h-[277px] w-[277px] mx-auto"
             key={item.name}
           >
             <div className="relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] h-full w-full">
